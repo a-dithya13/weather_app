@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 body{
     background: linear-gradient(to bottom,
@@ -14,14 +15,16 @@ body{
 .container{
     background-color: #ffffff;
     color: black;
-    padding: 30px;
+    padding: 40px;
+    width:650px;
     border-radius: 12px;
     text-align: center;
-    box-shadow:  0px 10 px 25px rgba(0,0,0,0.2px);
+    box-shadow:  0px 10 px 25px rgba(0,0,0,0.15);
 }
 h1{
     margin-bottom: 10px;
     color: darkcyan;
+    font-size:2.5rem;
 }
 form{
     display: flex;
@@ -48,27 +51,36 @@ form button{
     color: white;
     cursor: pointer;
 }
+form button:hover{
+    transform: scale(1.05);
+}
+
 .weather-card{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    gap:25px;
 }
 .weather-card img{
-    height: 100px;
-    width: 100px;
+    width: 120px;
+    height: 120px;
 }
 .weather-card h3{
     margin: 10px 0;
     color: darkcyan;
-
+    font-size: 1.3rem;
 }
-.weather-card card{
+.weather-card .card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content:center;
+    paddding:25px 35px;
+    background-color:#f8f9fa;
+    min-width:350px;
     border: 3px solid black;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border-radius: 12px;
     max-height: 50vh;
     margin: 5px 20px ;
