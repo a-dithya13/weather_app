@@ -27,7 +27,7 @@ app.post('/weather',async(req,res) =>{//async function waits for user to enter s
             res.render("index",{weather:result.data})
         }
         catch(error){
-            res.render("index",{weather:null,error:error})
+            res.render("index",{weather:null,error:"JAGAH NAHI MALUM"})
         }
 })
 
