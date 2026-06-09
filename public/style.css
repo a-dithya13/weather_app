@@ -1,87 +1,107 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing:border-box;
 }
+
 body{
-    background: linear-gradient(to bottom,
-    #efefef,
-    goldenrod);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background:linear-gradient(
+        to bottom,
+        #efefef,
+        goldenrod
+    );
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
+
 .container{
-    background-color: #ffffff;
-    color: black;
-    padding: 40px;
-    width:650px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow:  0px 10 px 25px rgba(0,0,0,0.15);
+    width:800px;
+    max-width:95%;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    text-align:center;
 }
+
 h1{
-    margin-bottom: 10px;
-    color: darkcyan;
-    font-size:2.5rem;
+    color:darkcyan;
+    margin-bottom:25px;
+    font-size:2.8rem;
 }
+
 form{
-    display: flex;
-    gap:10px;
-    margin-bottom: 20px;
+    display:flex;
+    gap:12px;
+    margin-bottom:30px;
 }
+
 form input{
-    flex: 1;
-    padding: 12px;
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    outline: none;
-    font-size: 16px;
+    flex:1;
+    padding:14px;
+    border:2px solid #ccc;
+    border-radius:12px;
+    font-size:16px;
 }
+
 form input:focus{
     border-color:goldenrod;
+    outline:none;
 }
 
 form button{
-    padding: 12px;
-    background-color: goldenrod;
-    border-radius: 12px;
-    border: none;
-    color: white;
-    cursor: pointer;
+    padding:14px 20px;
+    background:goldenrod;
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
 }
+
 form button:hover{
-    transform: scale(1.05);
+    transform:scale(1.05);
 }
 
 .weather-card{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:25px;
-}
-.weather-card img{
-    width: 120px;
-    height: 120px;
-}
-.weather-card h3{
-    margin: 10px 0;
-    color: darkcyan;
-    font-size: 1.3rem;
-}
-.weather-card .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex;
     justify-content:center;
-    paddding:25px 35px;
-    background-color:#f8f9fa;
-    min-width:350px;
-    border: 3px solid black;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-radius: 12px;
-    max-height: 50vh;
-    margin: 5px 20px ;
+    align-items:stretch;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#f8f9fa;
+    border:2px solid #e4e4e4;
+    border-radius:16px;
+    padding:25px;
+    min-width:200px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:darkcyan;
+    margin-bottom:8px;
+}
+
+.card p{
+    font-size:1.1rem;
+    margin-bottom:15px;
+    color:#333;
+}
+
+.card img{
+    width:100px;
+    height:100px;
+    display:block;
+    margin:auto;
 }
